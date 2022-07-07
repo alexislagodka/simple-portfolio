@@ -16,8 +16,8 @@
     h-full
     overflow-auto
     font-light
-    bg-black
     text-white
+    bg-neutral-900
     tracking-wider;
   }
 
@@ -49,6 +49,7 @@
 @layer components {
   .app {
     min-height: 600px;
+    min-width: 300px;
     @apply relative
     h-screen;
   }
