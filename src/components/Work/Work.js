@@ -13,10 +13,10 @@ export default function Work({ in: inProp }) {
   };
 
   const transitionStyles = {
-    entering: { opacity: 0, display: "flex", transform: "translateY(100%)" },
-    entered: { opacity: 1, display: "flex", transform: "translateY(0)" },
-    exiting: { opacity: 0, display: "flex" , transform: "translateY(100%)"},
-    exited: { opacity: 1, display: "none", transform: "translateY(0)" },
+    entering: { opacity: 0, display: "flex" },
+    entered: { opacity: 1, display: "flex" },
+    exiting: { opacity: 0, display: "flex"},
+    exited: { opacity: 1, display: "none"}
   };
 
   return (
