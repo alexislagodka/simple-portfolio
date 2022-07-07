@@ -29,7 +29,7 @@ export default function Work({ in: inProp }) {
           }}
           className="w-full h-full flex justify-center"
         >
-          <div className="absolute h-full w-full md:w-3/5 lg:w-2/5 left-0 -translate-x-1/2">
+          <div className="absolute h-screen w-full md:w-3/5 lg:w-2/5 left-0 -translate-x-1/2">
             <Balls gradient="from-purple-500 to-pink-500" />
           </div>
           <ProjectList in={inProp}/>
