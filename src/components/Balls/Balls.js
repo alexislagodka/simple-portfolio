@@ -8,7 +8,7 @@ export default function Balls({ gradient }) {
           className={`masterball rounded-full h-64 w-64 md:w-96 md:h-96 bg-gradient-to-t ${gradient}`}
         />
       </div>
-      <div className="relative h-full my-6 xl:my-0">
+      <div className="relative h-full my-12 xl:my-0">
         <div
           className={`absolute top-8 left-16 md:top-16 md:left-32 rounded-full h-8 w-8 md:h-12 md:w-12 bg-gradient-to-bl ${gradient}`}
         />
