@@ -29,7 +29,8 @@
 
   h2{
     @apply
-    text-7xl
+    text-4xl
+    md:text-7xl
     font-normal
   }
 
@@ -41,12 +42,13 @@
 
   p{
     @apply
-    text-lg
+    text-sm
+    md:text-lg
     font-light
   }
 }
 
 @layer components {
-  
+
 }
 

@@ -49,7 +49,7 @@ export default function CircleSvg({ position }) {
 
   return (
     <svg
-      width="751"
+      width="100%"
       height="751"
       viewBox="0 0 751 751"
       fill="none"
@@ -58,7 +58,6 @@ export default function CircleSvg({ position }) {
       <circle cx="375.5" cy="375.5" r="375" stroke="url(#gradient)" />
       <path
         d="M0.5,375.5a375,375 0 1,0 750,0a375,375 0 1,0 -750,0"
-        // stroke="url(#gradient)"
         className="path"
       />
       <path

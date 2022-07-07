@@ -7,10 +7,9 @@ export default function Work({ in: inProp }) {
   const duration = 300;
 
   const defaultStyle = {
-    transition: `opacity ${duration}ms ease-in-out, transform 1s`,
+    transition: `opacity ${duration}ms ease-in-out`,
     display: "none",
-    opacity: 0,
-    transform: "translateY(100%)"
+    opacity: 0
   };
 
   const transitionStyles = {
@@ -33,7 +32,7 @@ export default function Work({ in: inProp }) {
           <div className="absolute h-full w-full md:w-3/5 lg:w-2/5 left-0 -translate-x-1/2">
             <Balls gradient="from-purple-500 to-pink-500" />
           </div>
-          <ProjectList />
+          <ProjectList in={inProp}/>
         </div>
       )}
     </Transition>
