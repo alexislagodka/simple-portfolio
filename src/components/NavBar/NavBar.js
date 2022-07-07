@@ -1,13 +1,27 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useLayoutEffect, useState } from "react";
 import { gsap } from "gsap";
 
 export default function NavBar({ handleClick, activeLink, position }) {
+  function useWindowSize() {
+    const [size, setSize] = useState([0, 0]);
+    useLayoutEffect(() => {
+      function updateSize() {
+        setSize([window.innerWidth, window.innerHeight]);
+      }
+      window.addEventListener('resize', updateSize);
+      updateSize();
+      return () => window.removeEventListener('resize', updateSize);
+    }, []);
+    return size;
+  }
+
+  const [width, height] = useWindowSize();
+
   useEffect(() => {
-    if (window.matchMedia("(min-width: 768px)").matches) {
+    if (window.matchMedia("(min-width: 1280px)").matches) {
       if (position === "right") {
         gsap.to("nav", {
           position: "absolute",
-          left: "initial",
           right: 0,
           duration: 1,
         });
@@ -22,16 +36,22 @@ export default function NavBar({ handleClick, activeLink, position }) {
           duration: 1,
         });
       }
+    } else {
+      gsap.set("nav",{
+        position: "absolute",
+        top: "initial",
+        right: "initial"
+      })
     }
-  }, [position]);
+  }, [position, width, height]);
 
   return (
-    <nav className="absolute md:fixed top-0 w-full md:right-0 md:w-48 md:h-full flex justify-center items-center z-50">
-      <ol className="flex md:flex-col">
+    <nav className="absolute top-0 w-full xl:fixed xl:right-0 xl:w-48 xl:h-full flex justify-center items-center z-50">
+      <ol className="flex xl:flex-col">
         <li className="px-3 py-6 text-4xl">
           <button
             className={`${
-              activeLink === "Home" && "text-fuchsia-500 underline"
+              activeLink === "Home" && "text-fuchsia-500 underline underline-offset-8"
             }`}
             onClick={() => handleClick("Home")}
           >
@@ -41,7 +61,7 @@ export default function NavBar({ handleClick, activeLink, position }) {
         <li className="px-3 py-6 text-4xl">
           <button
             className={`${
-              activeLink === "Work" && "text-pink-500 underline"
+              activeLink === "Work" && "text-pink-500 underline underline-offset-8"
             }`}
             onClick={() => handleClick("Work")}
           >

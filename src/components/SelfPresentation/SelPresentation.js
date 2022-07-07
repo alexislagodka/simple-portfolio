@@ -2,8 +2,8 @@ import React from "react";
 
 export default function SelPresentation() {
   return (
-    <div className="absolute p-2 md:-left-48 z-1 w-full md:w-96 z-50">
-      <h1 className="p-2">Hello .</h1>
+    <div className="absolute p-2 lg:-left-52 w-full md:w-96 z-50">
+      <h1 className="p-2">Hello.</h1>
       <h3 className="py-4">My name is Lorem Ipsum</h3>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
