@@ -7,16 +7,17 @@ export default function Work({ in: inProp }) {
   const duration = 300;
 
   const defaultStyle = {
-    transition: `opacity ${duration}ms ease-in-out`,
+    transition: `opacity ${duration}ms ease-in-out, transform 1s`,
     display: "none",
     opacity: 0,
+    transform: "translateY(100%)"
   };
 
   const transitionStyles = {
-    entering: { opacity: 0, display: "flex" },
-    entered: { opacity: 1, display: "flex" },
-    exiting: { opacity: 0, display: "flex" },
-    exited: { opacity: 1, display: "none" },
+    entering: { opacity: 0, display: "flex", transform: "translateY(100%)" },
+    entered: { opacity: 1, display: "flex", transform: "translateY(0)" },
+    exiting: { opacity: 0, display: "flex" , transform: "translateY(100%)"},
+    exited: { opacity: 1, display: "none", transform: "translateY(0)" },
   };
 
   return (

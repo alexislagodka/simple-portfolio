@@ -29,6 +29,12 @@
 
   h2{
     @apply
+    text-7xl
+    font-normal
+  }
+
+  h3{
+    @apply
     text-xl
     font-normal
   }

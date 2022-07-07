@@ -9,7 +9,7 @@ export default function Home({ in: inProp }) {
   const defaultStyle = {
     transition: `opacity ${duration}ms ease-in-out`,
     opacity: 0,
-    //display: "none"
+    display: "none"
   };
 
   const transitionStyles = {
