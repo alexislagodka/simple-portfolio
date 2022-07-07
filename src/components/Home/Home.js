@@ -29,7 +29,7 @@ export default function Home({ in: inProp }) {
           }}
           className="absolute w-full h-full flex justify-center"
         >
-          <div className="relative w-full md:w-3/5 lg:w-2/5 flex align-center justify-center items-center">
+          <div className="relative w-full md:w-3/5 lg:w-2/5 flex justify-center items-center">
             <SelPresentation />
             <Balls gradient="from-violet-500 to-fuchsia-500" />
           </div>
