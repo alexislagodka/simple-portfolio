@@ -27,7 +27,7 @@ function App() {
   };
 
   return (
-    <div className="h-screen w-screen">
+    <div className="app">
       <NavBar handleClick={(page) => handleNav(page)} activeLink={page} position={menuPosition}/>
       <CircleSvg position={circlePosition} />
       <Home in={page === "Home"} />

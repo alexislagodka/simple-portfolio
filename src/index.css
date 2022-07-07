@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -9,50 +9,48 @@
     display: none;
   }
   html {
-    font-family: 'Inter', sans-serif;
-
+    font-family: "Inter", sans-serif;
     @apply m-0
     p-0
     w-full
     h-full
     overflow-hidden
-
+    /* overflow-auto */
     font-light
     bg-black
     text-white
-    tracking-wider
+    tracking-wider;
   }
 
-  h1{
-    @apply
-    font-light
+  h1 {
+    @apply font-light
     text-6xl
     md:text-8xl
-    lg:text-9xl
+    lg:text-9xl;
   }
 
-  h2{
-    @apply
-    text-4xl
+  h2 {
+    @apply text-4xl
     md:text-7xl
-    font-normal
+    font-normal;
   }
 
-  h3{
-    @apply
-    text-xl
-    font-normal
+  h3 {
+    @apply text-xl
+    font-normal;
   }
 
-  p{
-    @apply
-    font-thin
+  p {
+    @apply font-thin
     text-sm
-    md:text-lg
+    md:text-lg;
   }
 }
 
 @layer components {
-
+  .app {
+    min-height: 600px;
+    @apply relative
+    h-screen;
+  }
 }
-
