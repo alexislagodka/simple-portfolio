@@ -27,7 +27,7 @@ export default function Home({ in: inProp }) {
             ...defaultStyle,
             ...transitionStyles[state],
           }}
-          className="absolute w-full h-full flex justify-center"
+          className="absolute w-full h-full flex justify-center overflow-auto"
         >
           <div className="relative w-full md:w-3/5 lg:w-2/5 flex justify-center items-center">
             <SelPresentation />
