@@ -26,7 +26,7 @@ export default function NavBar({ handleClick, activeLink, position }) {
   }, [position]);
 
   return (
-    <nav className="sticky md:fixed top-0 w-full md:right-0 md:w-48 md:h-full flex justify-center items-center z-50">
+    <nav className="absolute md:fixed top-0 w-full md:right-0 md:w-48 md:h-full flex justify-center items-center z-50">
       <ol className="flex md:flex-col">
         <li className="px-3 py-6 text-4xl">
           <button
