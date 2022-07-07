@@ -7,7 +7,7 @@ export default function ProjectCard({ picture, children }) {
         <img src={picture} alt="wave" className="h-full w-full object-cover" />
       </div>
       <div className="w-full h-full">
-        <div className="p-2 md:p-4">{children}</div>
+        <div className="grid h-full p-2 md:p-4">{children}</div>
       </div>
     </div>
   );
