@@ -1,6 +1,6 @@
 import React from "react";
 import { Transition } from "react-transition-group";
-import Balls from "../Balls/Balls";
+import BallsBackground from "../BallsBackground/BallsBackground";
 import ProjectList from "../ProjectList/ProjectList";
 
 export default function Work({ in: inProp }) {
@@ -9,14 +9,14 @@ export default function Work({ in: inProp }) {
   const defaultStyle = {
     transition: `opacity ${duration}ms ease-in-out`,
     display: "none",
-    opacity: 0
+    opacity: 0,
   };
 
   const transitionStyles = {
     entering: { opacity: 0, display: "flex" },
     entered: { opacity: 1, display: "flex" },
-    exiting: { opacity: 0, display: "flex"},
-    exited: { opacity: 1, display: "none"}
+    exiting: { opacity: 0, display: "flex" },
+    exited: { opacity: 1, display: "none" },
   };
 
   return (
@@ -27,12 +27,12 @@ export default function Work({ in: inProp }) {
             ...defaultStyle,
             ...transitionStyles[state],
           }}
-          className="absolute w-full h-full flex justify-center"
+          className="w-full h-full"
         >
-          <div className="absolute h-full w-full md:w-3/5 lg:w-2/5 left-0 -translate-x-1/2 flex justify-center items-center">
-            <Balls gradient="from-purple-500 to-pink-500" />
-          </div>
-          <ProjectList in={inProp}/>
+          <BallsBackground position="-left-1/2" background="bg-gradient-to-b from-purple-500 to-pink-500" />
+          <main className="w-full h-full flex justify-center">
+            <ProjectList in={inProp} />
+          </main>
         </div>
       )}
     </Transition>

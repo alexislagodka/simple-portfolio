@@ -1,7 +1,7 @@
 import React from "react";
 import SelPresentation from "../SelfPresentation/SelPresentation";
-import Balls from "../Balls/Balls";
 import { Transition } from "react-transition-group";
+import BallsBackground from "../BallsBackground/BallsBackground";
 
 export default function Home({ in: inProp }) {
   const duration = 300;
@@ -9,13 +9,13 @@ export default function Home({ in: inProp }) {
   const defaultStyle = {
     transition: `opacity ${duration}ms ease-in-out`,
     opacity: 0,
-    display: "none"
+    display: "none",
   };
 
   const transitionStyles = {
-    entering: { opacity: 0, display: "flex" },
-    entered: { opacity: 1, display: "flex" },
-    exiting: { opacity: 0, display: "flex" },
+    entering: { opacity: 0, display: "block" },
+    entered: { opacity: 1, display: "block" },
+    exiting: { opacity: 0, display: "block" },
     exited: { opacity: 1, display: "none" },
   };
 
@@ -26,13 +26,13 @@ export default function Home({ in: inProp }) {
           style={{
             ...defaultStyle,
             ...transitionStyles[state],
-          }}
-          className="absolute w-full h-full flex justify-center"
+          }} 
+          className="HOME w-full h-full"
         >
-          <div className="relative w-full md:w-3/5 lg:w-2/5 flex justify-center items-center">
+          <BallsBackground background="bg-gradient-to-b from-purple-500 to-pink-500" />
+          <main className="relative h-full flex justify-center items-center max-w-lg">
             <SelPresentation />
-            <Balls gradient="from-violet-500 to-fuchsia-500" />
-          </div>
+          </main>
         </div>
       )}
     </Transition>

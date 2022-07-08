@@ -1,7 +1,7 @@
 import React from "react";
 
-export default function Ball({ position }) {
+export default function Ball({ name, background, position, size, rotation }) {
   return (
-    <div className={`${position} absolute rounded-full h-12 w-12 bg-gradient-to-t from-violet-500 to-fuchsia-500`} />
+    <div className={`absolute rounded-full ${name} ${background} ${position} ${size} ${rotation}`} />
   );
 }

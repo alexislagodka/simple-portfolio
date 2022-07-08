@@ -2,7 +2,7 @@ import React from "react";
 
 export default function SelPresentation() {
   return (
-    <div className="absolute p-2 lg:-left-52 w-full md:w-96 z-50">
+    <div className="absolute p-2 md:left-20 lg:left-40 xl:left-60 w-56 sm:w-96 z-50">
       <h1 className="p-2">Hello.</h1>
       <h3 className="py-4">My name is Lorem Ipsum</h3>
       <p>
