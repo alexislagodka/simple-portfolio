@@ -61,7 +61,7 @@ export default function NavBar({ handleClick, activeLink, position }) {
         <li className="px-3 py-6 text-4xl">
           <button
             className={`${
-              activeLink === "Work" && "text-pink-500 underline underline-offset-8"
+              activeLink === "Work" && "text-fuchsia-500 underline underline-offset-8"
             }`}
             onClick={() => handleClick("Work")}
           >
