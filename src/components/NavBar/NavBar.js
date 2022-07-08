@@ -48,7 +48,7 @@ export default function NavBar({ handleClick, activeLink, position }) {
   return (
     <nav className="absolute top-0 w-full xl:fixed xl:right-0 xl:w-48 xl:h-full flex justify-center items-center z-50">
       <ol className="flex xl:flex-col">
-        <li className="px-3 py-6 text-4xl">
+        <li className="px-4 py-8 text-2xl">
           <button
             className={`${
               activeLink === "Home" && "text-fuchsia-500 underline underline-offset-8"
@@ -58,7 +58,7 @@ export default function NavBar({ handleClick, activeLink, position }) {
             Home
           </button>
         </li>
-        <li className="px-3 py-6 text-4xl">
+        <li className="px-4 py-8 text-2xl">
           <button
             className={`${
               activeLink === "Work" && "text-fuchsia-500 underline underline-offset-8"
