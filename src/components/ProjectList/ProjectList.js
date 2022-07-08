@@ -26,7 +26,7 @@ export default function ProjectList({ in: inProp }) {
             ...defaultStyle,
             ...transitionStyles[state],
           }}
-          className="pt-24 xl:pt-0 overflow-auto w-full w-full md:w-4/5 xl:w-1/2 z-10"
+          className="pt-24 xl:pt-0 overflow-auto w-full w-full md:w-4/5 xl:w-1/2"
         >
           <div className="grid h-px">
             <ProjectCard picture="https://images.unsplash.com/photo-1557672172-298e090bd0f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80">
