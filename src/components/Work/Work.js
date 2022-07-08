@@ -30,7 +30,7 @@ export default function Work({ in: inProp }) {
           className="w-full h-full"
         >
           <BallsBackground position="-left-1/2" background="bg-gradient-to-b from-purple-500 to-pink-500" />
-          <main className="w-full h-full flex justify-center max-h-screen">
+          <main className="w-full h-full flex justify-center">
             <ProjectList in={inProp} />
           </main>
         </div>
