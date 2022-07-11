@@ -3,7 +3,7 @@ import Ball from "../Ball/Ball";
 
 export default function BallsBackground({ position, background }) {
   return (
-    <div className={`${position} absolute w-full h-full flex justify-center items-center`}>
+    <div className={`${position} absolute w-full h-full flex justify-center items-center -z-50`}>
       <div className="relative h-full md:w-3/5 lg:w-2/5">
         <div className="absolute w-full h-full flex justify-center items-center">
           <Ball
