@@ -27,7 +27,7 @@ export default function Home({ in: inProp }) {
             ...defaultStyle,
             ...transitionStyles[state],
           }} 
-          className="HOME w-full h-full"
+          className="w-full h-full"
         >
           <BallsBackground background="bg-gradient-to-b from-purple-500 to-pink-500" />
           <main className="relative h-full flex justify-center items-center max-w-lg">
