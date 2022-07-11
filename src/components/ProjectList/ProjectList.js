@@ -10,13 +10,14 @@ export default function ProjectList({ in: inProp }) {
   const defaultStyle = {
     transition: `transform ${duration}ms ease-in-out ${delay}ms`,
     transform: "translateY(100%)",
+    display: "none"
   };
 
   const transitionStyles = {
-    entering: { transform: "translateY(100%)" },
-    entered: { transform: "translateY(0)" },
-    exiting: { transform: "translateY(100%)" },
-    exited: { transform: "translateY(0)" },
+    entering: { transform: "translateY(100%)", display: "block" },
+    entered: { transform: "translateY(0)", display: "block" },
+    exiting: { transform: "translateY(100%)", display: "block" },
+    exited: { transform: "translateY(0)", display: "none" },
   };
 
   return (
