@@ -7,9 +7,13 @@ export default function ProjectList({ in: inProp }) {
   const duration = 600;
   const delay = 600;
 
+  if (window.matchMedia("(min-width: 768px)").matches) {
+
+  }
+
   const defaultStyle = {
     transition: `transform ${duration}ms ease-in-out ${delay}ms`,
-    transform: "translateY(100%)",
+    // transform: "translateY(100%)",
     display: "none"
   };
 

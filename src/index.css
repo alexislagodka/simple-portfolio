@@ -10,8 +10,7 @@
   }
   html {
     font-family: "Inter", sans-serif;
-    @apply 
-    overflow-hidden
+    @apply
     m-0
     p-0
     w-full
@@ -52,8 +51,6 @@
     min-height: 600px;
     min-width: 300px;
     @apply relative
-    h-screen
-    overflow-auto
-    ;
+    h-screen;
   }
 }
