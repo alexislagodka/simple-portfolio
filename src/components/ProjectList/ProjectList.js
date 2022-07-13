@@ -6,22 +6,19 @@ import { info } from "../../info/Info";
 export default function ProjectList({ in: inProp }) {
   const duration = 600;
   const delay = 600;
-
-  if (window.matchMedia("(min-width: 768px)").matches) {
-
-  }
+  let transform = "none";
+  const bigscreen = window.matchMedia("(min-width: 768px)").matches;
 
   const defaultStyle = {
     transition: `transform ${duration}ms ease-in-out ${delay}ms`,
-    // transform: "translateY(100%)",
-    display: "none"
+    display: "none",
   };
 
   const transitionStyles = {
-    entering: { transform: "translateY(100%)", display: "block" },
-    entered: { transform: "translateY(0)", display: "block" },
-    exiting: { transform: "translateY(100%)", display: "block" },
-    exited: { transform: "translateY(0)", display: "none" },
+    entering: { transform: bigscreen && "translateY(100%)", display: "block" },
+    entered: { transform: bigscreen && "translateY(0)", display: "block" },
+    exiting: { transform: bigscreen && "translateY(100%)", display: "block" },
+    exited: { transform: bigscreen && "translateY(0)", display: "none" },
   };
 
   return (
