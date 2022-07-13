@@ -28,7 +28,7 @@ export default function ProjectList({ in: inProp }) {
             ...defaultStyle,
             ...transitionStyles[state],
           }}
-          className="pt-24 xl:pt-0 overflow-auto w-full w-full md:w-4/5 xl:w-1/2 z-10"
+          className="pt-24 xl:pt-0 overflow-auto w-full w-full md:w-4/5 xl:w-1/2"
         >
           <div className="grid h-px">
             {info.work.map((project, index) => (

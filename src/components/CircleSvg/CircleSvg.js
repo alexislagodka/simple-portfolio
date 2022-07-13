@@ -54,6 +54,7 @@ export default function CircleSvg({ position }) {
       viewBox="0 0 751 751"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className="-z-50"
     >
       <circle cx="375.5" cy="375.5" r="375" stroke="url(#gradient)" />
       <path
