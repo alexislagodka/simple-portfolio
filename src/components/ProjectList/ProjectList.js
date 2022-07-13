@@ -6,7 +6,6 @@ import { info } from "../../info/Info";
 export default function ProjectList({ in: inProp }) {
   const duration = 600;
   const delay = 600;
-  let transform = "none";
   const bigscreen = window.matchMedia("(min-width: 768px)").matches;
 
   const defaultStyle = {
