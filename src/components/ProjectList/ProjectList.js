@@ -28,15 +28,16 @@ export default function ProjectList({ in: inProp }) {
             ...defaultStyle,
             ...transitionStyles[state],
           }}
-          className="pt-24 xl:pt-0 overflow-auto w-full w-full md:w-4/5 xl:w-1/2"
+          className="pt-24 xl:pt-0 overflow-auto w-full w-full md:w-4/5 xl:w-1/2 z-10"
         >
           <div className="grid h-px">
-            {info.work.map((project) => (
+            {info.work.map((project, index) => (
               <ProjectCard
                 image={project.image}
                 title={project.title}
                 content={project.content}
                 link={project.link}
+                key={index}
               />
             ))}
           </div>
